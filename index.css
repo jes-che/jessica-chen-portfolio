@@ -3,6 +3,12 @@ body {
     font-family: Cormorant, serif;
 }
 
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -11,22 +17,55 @@ body {
 
 h1 {
     font-weight: 300;
-    margin: 32px 0 32px 64px;
+    margin: 32px 0;
 }
 
-.navbar .links {
+.navbar .link {
     width: 500px;
     margin: 30px 16px 32px 32px;
 }
 
-.navbar .links ul {
+.navbar .link ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.navbar .links a {
+.navbar .link a {
     color: black;
     text-decoration: none;
     font-size: 1.25rem;
+}
+
+/* PROJECT GRID */
+.project-grid {
+    display: grid;
+    grid-template-areas: 
+    "1 2"
+    "3 4";
+    gap: 32px;
+    width: 100%;
+}
+
+#1 {
+    grid-area: 1;
+}
+
+#2 {
+    grid-area: 2;
+}
+
+#3 {
+    grid-area: 3;
+}
+
+#4 {
+    grid-area: 4;
+}
+
+.project img {
+    width: 100%;
+    object-fit: scale-down;
+    /* height: 100%; */
+    border: 1px solid black;
 }
