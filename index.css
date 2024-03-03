@@ -1,6 +1,18 @@
+:root {
+    /* TEXT VARIABLES */
+    --font: "Cormorant", serif;
+    --text-light: #fff;
+    --text-dark: #000;
+
+    /* COLOR VARIABLES */
+    --bg-gradient: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+}
+
 body {
     margin: 0;
-    font-family: Cormorant, serif;
+    font-family: var(--font);
+    background: var(--bg-gradient);
+    color: var(--text-dark);
 }
 
 .container {
@@ -38,18 +50,27 @@ h1 {
     font-size: 1.25rem;
 }
 
+.navbar .link a:hover {
+    text-decoration: underline;
+}
+
 /* PROJECT GRID */
-#project-grid {
+.project-grid {
     display: grid;
     grid-template-areas: 
-    "shop estimator"
-    "museum archery";
+    "shop swipe"
+    "estimator archery"
+    "museum camp";
     gap: 16px;
     width: 100%;
 }
 
 #shop {
     grid-area: shop;
+}
+
+#swipe {
+    grid-area: swipe;
 }
 
 #estimator {
@@ -64,9 +85,68 @@ h1 {
     grid-area: archery;
 }
 
+#camp {
+    grid-area: camp;
+}
+
+.project-grid .white h2 {
+    color: var(--text-light);
+}
+
+.project-grid .white p {
+    color: var(--text-light);
+}
+
+.project h2 {
+    font-weight: bold;
+}
+
+.project a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.project a:hover {
+    opacity: 0.8;
+}
+
 .project img {
     width: 100%;
     object-fit: cover;
     height: 400px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
+/* ABOUT */
+.about {
+    width: 40%;
+    min-width: 600px;
+    margin: 100px 0 100px 200px;
+}
+
+.about h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.about .white {
+    color: var(--text-light);
+}
+
+.contact {
+    margin-top: 100px;
+}
+
+.contact p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.cta {
+    border-bottom: 1px solid var(--text-light);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/* RESPONSIVE */
