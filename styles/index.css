@@ -114,7 +114,6 @@ h1 {
     width: 100%;
     object-fit: cover;
     height: 400px;
-    /* border: 1px solid black; */
 }
 
 /* ABOUT */
@@ -150,3 +149,35 @@ h1 {
 }
 
 /* RESPONSIVE */
+/* CUSTOM BREAKPOINT (1100px) */
+@media only screen and (max-width: 1100px) {
+    /* NAVBAR */
+    h1 {
+        font-size: 1.5rem;
+    }
+    .navbar .link ul li {
+
+    }
+    .navbar .link {
+        width: 400px;
+        margin: 0 0 32px 0;
+    }
+
+    /* PROJECT GRID */
+    .project-grid {
+        max-width: 100%;
+        grid-template-areas: 
+            "shop"
+            "swipe"
+            "estimator" 
+            "archery"
+            "museum" 
+            "camp";
+    }
+    .project {
+        margin: 20px 0;
+    }
+    .project img {
+        height: 550px;
+    }
+}
