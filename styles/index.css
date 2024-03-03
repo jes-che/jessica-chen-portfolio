@@ -54,6 +54,18 @@ h1 {
     text-decoration: underline;
 }
 
+.hamburger {
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: black;
+    width: 36px;
+    height: 2px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
 /* PROJECT GRID */
 .project-grid {
     display: grid;
@@ -152,12 +164,19 @@ h1 {
 /* CUSTOM BREAKPOINT (1100px) */
 @media only screen and (max-width: 1100px) {
     /* NAVBAR */
+    .navbar {
+        margin: 32px 0 0 0;
+    }
+
     h1 {
         font-size: 1.5rem;
+        margin: 8px 0 32px 0;
     }
-    .navbar .link ul li {
 
+    .navbar .link a {
+        font-size: 1rem;
     }
+
     .navbar .link {
         width: 400px;
         margin: 0 0 32px 0;
@@ -174,10 +193,59 @@ h1 {
             "museum" 
             "camp";
     }
+
     .project {
         margin: 20px 0;
     }
+
     .project img {
         height: 550px;
     }
+}
+
+/* CUSTOM BREAKPOINT (1000px) */
+@media only screen and (max-width: 1000px) {
+    /* ABOUT */
+    .about {
+        margin: 100px 0 100px 100px;
+    }
+}
+
+/* TABLET SIZE */
+@media only screen and (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        justify-content: space-between;    
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 0 0 32px 0;
+    }
+
+    .navbar .link {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 8px 0 0 0;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    /* ABOUT */
+    .about {
+        margin: 100px auto;
+        min-width: 450px;
+    }
+}
+
+/* MOBILE SIZE */
+@media only screen and (max-width: 550px) {
+
 }
