@@ -26,6 +26,7 @@ body {
     max-width: 95%;
     margin: 0 auto;
     padding: 0 16px;
+    /* min-width: 350px; */
 }
 
 /* NAVBAR */
@@ -162,8 +163,9 @@ h1 {
 
 .project img {
     width: 100%;
-    object-fit: cover;
-    height: 400px;
+    height: auto;
+    /* object-fit: cover; 
+    height: 400px; */
 }
 
 /* ABOUT */
@@ -235,10 +237,6 @@ h1 {
     .project {
         margin: 20px 0;
     }
-
-    .project img {
-        height: 550px;
-    }
 }
 
 /* CUSTOM BREAKPOINT (1000px) */
@@ -254,7 +252,8 @@ h1 {
     /* NAVBAR */
     .navbar {
         justify-content: space-between;
-        position: fixed;
+        position: relative;
+        /* position: fixed;
         top: 0;
         left: 0;
         z-index: 2;
@@ -262,7 +261,7 @@ h1 {
         width: 100%;
         box-sizing: border-box;
         margin: 0 0 0 16px;
-        padding: 32px 0 0 0;
+        padding: 32px 0 0 0; */
         
     }
 
@@ -279,8 +278,10 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 8px 32px 0 0;
-        /* z-index: 2; */
+        margin: 8px 16px 0 0;
+        position: fixed;
+        z-index: 3;
+        right: 0;
     }
 
     .hamburger:hover {
@@ -293,14 +294,33 @@ h1 {
 
     /* ABOUT */
     #about {
-        margin: 100px auto;
+        margin: 100px 0 100px 50px;
         min-width: 450px;
     }
 }
 
 /* MOBILE SIZE */
 @media only screen and (max-width: 550px) {
+    /* NAVBAR */
+    h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
 
+    .hamburger {
+        margin: 4px 16px 0 0;
+    }
+
+    /* PROJECT GRID */
+    #project-grid {
+        margin: 32px 0 0 0;
+    }
+
+    /* ABOUT */
+    #about {
+        margin: 100px auto;
+        min-width: 350px;
+    }
 }
 
 /* NAVBAR ANIMATIONS */
