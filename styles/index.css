@@ -152,6 +152,10 @@ h1 {
     font-weight: bold;
 }
 
+.project p {
+    font-size: 1.25rem;
+}
+
 .project a {
     color: var(--text-dark);
     text-decoration: none;
