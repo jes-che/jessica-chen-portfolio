@@ -110,8 +110,8 @@ h1 {
     display: grid;
     grid-template-areas: 
     "shop swipe"
-    "estimator archery"
-    "museum camp";
+    "museum archery"
+    "estimator camp";
     gap: 16px;
     width: 100%;
 }
@@ -153,7 +153,7 @@ h1 {
 }
 
 .project p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .project a {
@@ -167,9 +167,9 @@ h1 {
 
 .project img {
     width: 100%;
-    height: auto;
-    /* object-fit: cover; 
-    height: 400px; */
+    /* height: auto; */
+    object-fit: cover; 
+    height: 385px;
 }
 
 /* ABOUT */
@@ -232,9 +232,9 @@ h1 {
         grid-template-areas: 
             "shop"
             "swipe"
-            "estimator" 
+            "museum"
             "archery"
-            "museum" 
+            "estimator" 
             "camp";
     }
 
@@ -294,6 +294,12 @@ h1 {
     
     .mobileNav {
         display: flex;
+    }
+
+    /* PROJECT GRID */
+    .project img {
+        width: 100%;
+        height: auto;
     }
 
     /* ABOUT */
