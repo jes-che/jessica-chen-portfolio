@@ -110,6 +110,7 @@ h1 {
 /* PROJECT GRID */
 #project-grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "shop swipe"
     "museum archery"
