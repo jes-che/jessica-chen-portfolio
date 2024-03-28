@@ -112,9 +112,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "shop swipe"
-    "museum archery"
-    "estimator game";
+    "shop game"
+    "swipe museum"
+    "estimator archery";
     gap: 16px;
     width: 100%;
 }
@@ -254,11 +254,11 @@ h1 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
             "shop"
+            "game"
             "swipe"
             "museum"
-            "archery"
-            "estimator" 
-            "game";
+            "estimator"
+            "archery";
     }
 
     .project {
