@@ -114,7 +114,7 @@ h1 {
     grid-template-areas: 
     "shop swipe"
     "museum archery"
-    "estimator camp";
+    "estimator game";
     gap: 16px;
     width: 100%;
 }
@@ -139,8 +139,8 @@ h1 {
     grid-area: archery;
 }
 
-#camp {
-    grid-area: camp;
+#game {
+    grid-area: game;
 }
 
 #project-grid .white h2 {
@@ -258,7 +258,7 @@ h1 {
             "museum"
             "archery"
             "estimator" 
-            "camp";
+            "game";
     }
 
     .project {
