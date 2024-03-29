@@ -178,9 +178,9 @@ h1 {
     text-decoration: none;
 }
 
-/* .project a:hover {
-    opacity: 0.8;
-} */
+#zht {
+    text-decoration: underline; 
+}
 
 .project img {
     width: 100%;
