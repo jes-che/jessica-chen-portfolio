@@ -256,11 +256,11 @@ a.btn:hover {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
             "shop"
-            "game"
             "swipe"
             "museum"
             "estimator"
-            "archery";
+            "archery"
+            "game";
     }
 
     .project {
