@@ -173,9 +173,10 @@ h1 {
 
 .project h2 {
     font-weight: 600;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    /* font-style: italic; */
+    font-family: var(--font-2);
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.1rem; */
 }
 
 .project .mobileArrow {
@@ -190,13 +191,13 @@ h1 {
 }
 
 a.btn {
-    border: 1px solid var(--text-light-2);
+    border: 1.75px solid var(--text-light-2);
     border-radius: 300px;
     display: inline-block;
     color: var(--text-light-2);
-    font-family: var(--font-1);
-    font-size: 1rem;
-    font-weight: 700;
+    font-family: var(--font-2);
+    font-size: 0.75rem;
+    font-weight: 500;
     margin-top: 0.75rem;
     margin-bottom: 1.5rem;
     padding: 10px 15px;
