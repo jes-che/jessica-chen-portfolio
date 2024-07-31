@@ -2,7 +2,8 @@
     /* TEXT VARIABLES */
     --font-1: "Cormorant Garamond", serif;
     --font-2: "Raleway", sans-serif;
-    --text-light: #fff;
+    --text-light-1: #fff;
+    --text-light-2: #996;
     --text-dark: #0f0f0f;
 
     /* COLOR VARIABLES */
@@ -142,11 +143,32 @@ h1 {
 }
 
 #project-grid .white h2 {
-    color: var(--text-light);
+    color: var(--text-light-1);
 }
 
 #project-grid .white p {
-    color: var(--text-light);
+    color: var(--text-light-1);
+}
+
+#project-grid .white a.btn {
+    background-color: var(--text-light-2);
+    color: var(--text-light-1);
+    transition: background-color .3s cubic-bezier(.47, 0, .745, .715);
+}
+
+#project-grid .white a.btn:hover {
+    background-color: var(--bg-gradient);
+    color: var(--text-light-2);
+}
+
+.project img {
+    width: 100%;
+    object-fit: cover; 
+    transition: 0.2s ease-in;
+}
+
+.project img:hover {
+    opacity: 0.6;
 }
 
 .project h2 {
@@ -154,10 +176,6 @@ h1 {
     font-style: italic;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-}
-
-.project h2:hover {
-    text-decoration: underline;
 }
 
 .project .mobileArrow {
@@ -171,23 +189,30 @@ h1 {
     font-weight: 300;
 }
 
-.project a {
-    color: var(--text-dark);
+a.btn {
+    border: 1px solid var(--text-light-2);
+    border-radius: 300px;
+    display: inline-block;
+    color: var(--text-light-2);
+    font-family: var(--font-1);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 10px 15px;
+    text-transform: uppercase;
     text-decoration: none;
+    transition: background-color .3s cubic-bezier(.47, 0, .745, .715);
+}
+
+a.btn:hover {
+    background-color: var(--text-light-2);
+    color: var(--text-light-1);
 }
 
 #zht {
-    text-decoration: underline; 
-}
-
-.project img {
-    width: 100%;
-    object-fit: cover; 
-    transition: 0.2s ease-in;
-}
-
-.project img:hover {
-    opacity: 0.6;
+    text-decoration: underline;
+    color: var(--text-dark); 
 }
 
 /* ABOUT */
@@ -203,7 +228,7 @@ h1 {
 }
 
 #about .white {
-    color: var(--text-light);
+    color: var(--text-light-1);
 }
 
 #contact {
@@ -216,7 +241,7 @@ h1 {
 }
 
 .cta {
-    border-bottom: 1px solid var(--text-light);
+    border-bottom: 1px solid var(--text-light-1);
     display: inline-block;
     padding-bottom: 8px;
     margin-top: 0;
