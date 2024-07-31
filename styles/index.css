@@ -111,9 +111,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "shop game"
-    "swipe museum"
-    "estimator archery";
+    "shop swipe"
+    "museum estimator"
+    "archery game";
     gap: 16px;
     width: 100%;
 }
@@ -212,7 +212,7 @@ a.btn:hover {
 
 #zht {
     text-decoration: underline;
-    color: var(--text-dark); 
+    color: var(--text-light-1); 
 }
 
 /* ABOUT */
