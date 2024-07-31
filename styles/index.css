@@ -195,7 +195,7 @@ a.btn {
     display: inline-block;
     color: var(--text-light-2);
     font-family: var(--font-1);
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-top: 0.75rem;
     margin-bottom: 1.5rem;
