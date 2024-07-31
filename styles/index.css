@@ -316,9 +316,9 @@ a.btn:hover {
         height: auto;
     }
 
-    .project .mobileArrow {
+    /* .project .mobileArrow {
         display: inline-block;
-    }
+    } */
 
     /* ABOUT */
     #about {
