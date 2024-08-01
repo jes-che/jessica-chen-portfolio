@@ -181,10 +181,6 @@ h1 {
     /* letter-spacing: 0.1rem; */
 }
 
-.project .mobileArrow {
-    display: none;
-}
-
 .project p {
     font-family: var(--font-2);
     font-size: 1.25rem;
@@ -318,10 +314,6 @@ a.btn:hover {
         width: 100%;
         height: auto;
     }
-
-    /* .project .mobileArrow {
-        display: inline-block;
-    } */
 
     /* ABOUT */
     #about {
