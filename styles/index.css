@@ -118,7 +118,7 @@ h1 {
 .hero span {
     display: block;
     font-size: 7rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* PROJECT GRID */
@@ -364,10 +364,6 @@ a.btn:hover {
     .hero {
         height: 40vh;
         border-top: none
-    }
-
-    .hero span {
-        font-weight: 800;
     }
 
     /* PROJECT GRID */
