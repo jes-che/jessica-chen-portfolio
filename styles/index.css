@@ -35,24 +35,25 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 32px 0 0 0;
+    margin: 16px 0 0 0;
 }
 
 h1 {
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 0 0 32px 0;
+    margin: 0;
     letter-spacing: 0.1rem;
 }
 
 .navbar .link {
     width: 450px;
-    margin: -16px 16px 32px 0;
+    margin: -16px 16px 0 0;
 }
 
 .navbar .link ul {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: end;
     list-style-type: none;
 }
 
@@ -112,7 +113,7 @@ h1 {
 .hero {
     height: 65vh;
     border-top: 1px solid var(--text-dark);
-    padding: 5rem 0;
+    padding: 7rem 0 5rem 2rem;
 }
 
 .hero span {
@@ -264,6 +265,10 @@ a.btn:hover {
 /* CUSTOM BREAKPOINT (1100px) */
 @media only screen and (max-width: 1100px) {
     /* HERO */
+    .hero {
+        height: 50vh;
+    }
+
     .hero span {
         font-size: 6rem;
     }
@@ -336,8 +341,9 @@ a.btn:hover {
 
     /* HERO */
     .hero {
-        height: 50vh;
-        padding: 3rem 0;
+        height: 35vh;
+        padding: 5rem 0 3rem 1rem;
+        border-top: none;
     }
 
     .hero span {
@@ -367,8 +373,7 @@ a.btn:hover {
 
     /* HERO */
     .hero {
-        height: 40vh;
-        border-top: none
+        height: 20vh;
     }
 
     .hero span {
