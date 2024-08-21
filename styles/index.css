@@ -372,6 +372,10 @@ a.btn:hover {
     }
 
     /* HERO */
+    .hero {
+        padding: 5rem 0 3rem 0;
+    }
+
     .hero span {
         font-size: 3rem;
     }
