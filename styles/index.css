@@ -282,8 +282,8 @@ a.btn:hover {
         max-width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
-            "shop"
             "natours"
+            "shop"
             "swipe"
             "museum"
             "estimator"
