@@ -127,9 +127,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "shop swipe"
-    "museum estimator"
-    "archery game";
+    "natours shop"
+    "swipe museum"
+    "estimator archery";
     gap: 16px;
     width: 100%;
 }
@@ -156,6 +156,10 @@ h1 {
 
 #game {
     grid-area: game;
+}
+
+#natours {
+    grid-area: natours;
 }
 
 #project-grid .white h2 {
@@ -279,11 +283,11 @@ a.btn:hover {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
             "shop"
+            "natours"
             "swipe"
             "museum"
             "estimator"
-            "archery"
-            "game";
+            "archery";
     }
 
     .project {
