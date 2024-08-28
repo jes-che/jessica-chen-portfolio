@@ -12,13 +12,19 @@
     --bg-light: #fff;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     position: relative;
     overflow-x: hidden;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
+    box-sizing: border-box;
     margin: 0;
     font-family: var(--font-1);
     background: var(--bg-gradient);
@@ -28,26 +34,27 @@ body {
 .container {
     max-width: 95%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 1.6rem;
 }
 
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 16px 0 0 0;
+    margin: 1.6rem 0 0 0;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     margin: 0;
     letter-spacing: 0.1rem;
+    transform: translateY(-0.5rem);
 }
 
 .navbar .link {
     width: 450px;
-    margin: -16px 16px 0 0;
+    margin: -1.6rem 1.6rem 0 0;
 }
 
 .navbar .link ul {
@@ -60,11 +67,12 @@ h1 {
 .navbar .link a {
     color: var(--text-dark);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    transition: all 0.2s;
 }
 
 .navbar .link a:hover {
-    text-decoration: underline;
+    color: var(--text-light-2);
 }
 
 .hamburger {
@@ -80,7 +88,7 @@ h1 {
 }
 
 .mobileNav {
-    width: 100px;
+    width: 10rem;
     height: 100vh;
     background-color: var(--bg-light);
     display: none;
@@ -90,15 +98,15 @@ h1 {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: -160px;
-    padding: 16px;
+    right: -16rem;
+    padding: 1.6rem;
     transition: transform 0.5s;
 }
 
 .mobileNav a {
     text-decoration: none;
     color: var(--text-dark);
-    margin: 16px 0;
+    margin: 1.6rem 0;
     font-weight: bold;
 }
 
@@ -107,18 +115,18 @@ h1 {
 }
 
 .openDrawer {
-    transform: translateX(-160px);
+    transform: translateX(-16rem);
 }
 
 .hero {
-    height: 45vh;
+    height: 60vh;
     border-top: 1px solid var(--text-dark);
-    padding: 7rem 0 5rem 2rem;
+    padding: 12rem 0 6rem 3rem;
 }
 
 .hero span {
     display: block;
-    font-size: 7rem;
+    font-size: 11.2rem;
     font-weight: 700;
 }
 
@@ -128,9 +136,9 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "natours shop"
-    "swipe museum"
+    "swipe nexter"
     "estimator trillo";
-    gap: 16px;
+    gap: 1.6rem;
     width: 100%;
 }
 
@@ -146,20 +154,16 @@ h1 {
     grid-area: estimator;
 }
 
-#museum {
-    grid-area: museum;
-}
-
-#archery {
-    grid-area: archery;
-}
-
-#game {
-    grid-area: game;
-}
-
 #natours {
     grid-area: natours;
+}
+
+#trillo {
+    grid-area: trillo;
+}
+
+#nexter {
+    grid-area: nexter;
 }
 
 #project-grid .white h2 {
@@ -173,7 +177,7 @@ h1 {
 #project-grid .white a.btn {
     background-color: var(--text-light-2);
     color: var(--text-light-1);
-    transition: background-color .3s cubic-bezier(.47, 0, .745, .715);
+    transition: background-color 0.3s cubic-bezier(.47, 0, .745, .715);
 }
 
 #project-grid .white a.btn:hover {
@@ -184,7 +188,7 @@ h1 {
 .project img {
     width: 100%;
     object-fit: cover;
-    box-shadow: 1rem 1rem 1rem rgba(0,0,0, .3);
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0, 0.3);
     transition: 0.2s ease-in;
 }
 
@@ -193,34 +197,32 @@ h1 {
 }
 
 .project h2 {
+    font-size: 2.4rem;
     font-weight: 600;
-    /* font-style: italic; */
     font-family: var(--font-2);
-    /* text-transform: uppercase; */
-    /* letter-spacing: 0.1rem; */
 }
 
 .project p {
     font-family: var(--font-2);
-    font-size: 1.25rem;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 300;
 }
 
 a.btn {
     border: 1.75px solid var(--text-light-2);
-    border-radius: 300px;
+    border-radius: 30rem;
     display: inline-block;
     color: var(--text-light-2);
     font-family: var(--font-2);
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-top: 0.75rem;
-    margin-bottom: 1.5rem;
-    padding: 10px 15px;
+    margin-top: 1.2rem;
+    margin-bottom: 2.4rem;
+    padding: 1rem 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
-    transition: background-color .3s cubic-bezier(.47, 0, .745, .715);
+    transition: background-color 0.3s cubic-bezier(.47, 0, .745, .715);
 }
 
 a.btn:hover {
@@ -228,20 +230,20 @@ a.btn:hover {
     color: var(--text-light-1);
 }
 
-#zht {
+/* #zht {
     text-decoration: underline;
     color: var(--text-light-1); 
-}
+} */
 
 /* ABOUT */
 #about {
     width: 40%;
-    min-width: 600px;
-    margin: 100px 0 100px 200px;
+    min-width: 60rem;
+    margin: 10rem 0 10rem 20rem;
 }
 
 #about h3 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 300;
 }
 
@@ -250,12 +252,12 @@ a.btn:hover {
 }
 
 #contact {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 #contact p {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 3rem;
 }
 
 .cta {
@@ -267,7 +269,7 @@ a.btn:hover {
 
 /* RESPONSIVE */
 /* CUSTOM BREAKPOINT (1100px) */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 68.75em) {
     /* HERO */
     .hero {
         height: 35vh;
@@ -285,7 +287,7 @@ a.btn:hover {
             "natours"
             "shop"
             "swipe"
-            "museum"
+            "nexter"
             "estimator"
             "trillo";
     }
