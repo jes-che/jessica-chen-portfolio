@@ -45,7 +45,7 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
     margin: 0;
     letter-spacing: 0.1rem;
@@ -67,7 +67,7 @@ h1 {
 .navbar .link a {
     color: var(--text-dark);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.75rem;
     transition: all 0.2s;
 }
 
@@ -305,7 +305,7 @@ a.btn:hover {
 }
 
 /* TABLET SIZE */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48em) {
     /* NAVBAR */
     .navbar {
         justify-content: space-between;
@@ -313,8 +313,8 @@ a.btn:hover {
     }
 
     h1 {
-        font-size: 1.25rem;
-        margin: 0 0 32px 0;
+        font-size: 1.75rem;
+        margin-top: 0.5rem;
     }
 
     .navbar .link {
@@ -325,7 +325,7 @@ a.btn:hover {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 0 16px 0 0;
+        margin: 0 1.6rem 0 0;
         position: fixed;
         z-index: 3;
         right: 0;
@@ -341,25 +341,19 @@ a.btn:hover {
 
     /* HERO */
     .hero {
-        height: 25vh;
-        padding: 5rem 0 3rem 1rem;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
         border-top: none;
     }
 
     .hero span {
-        font-size: 4rem;
-    }
-
-    /* PROJECT GRID */
-    .project img {
-        width: 100%;
-        height: auto;
+        font-size: 7rem;
     }
 
     /* ABOUT */
     #about {
-        margin: 100px 0 100px 50px;
-        min-width: 450px;
+        margin-left: 5rem;
+        min-width: 45rem;
     }
 }
 
