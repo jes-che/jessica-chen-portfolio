@@ -139,7 +139,7 @@ h1 {
     grid-template-areas: 
     "natours shop"
     "swipe nexter"
-    "estimator trillo";
+    "museum trillo";
     gap: 4rem;
     width: 100%;
 }
@@ -154,6 +154,10 @@ h1 {
 
 #estimator {
     grid-area: estimator;
+}
+
+#museum {
+    grid-area: museum;
 }
 
 #natours {
@@ -299,7 +303,7 @@ a.btn:hover {
             "shop"
             "swipe"
             "nexter"
-            "estimator"
+            "museum"
             "trillo";
     }
     
