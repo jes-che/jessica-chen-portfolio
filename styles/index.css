@@ -232,6 +232,11 @@ a.btn:hover {
     color: var(--text-light-1);
 }
 
+.skills {
+    font-style: italic;
+    font-weight: 500;
+}
+
 /* ABOUT */
 #about {
     width: 40%;
