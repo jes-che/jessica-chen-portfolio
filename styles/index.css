@@ -34,7 +34,7 @@ body {
 .container {
     max-width: 95%;
     margin: 0 auto;
-    padding: 0 4rem;
+    padding: 0 4vw;
 }
 
 /* NAVBAR */
@@ -304,7 +304,7 @@ a.btn:hover {
     }
 }
 
-/* TABLET SIZE */
+/* TABLET SIZE (768px) */
 @media only screen and (max-width: 48em) {
     /* NAVBAR */
     .navbar {
@@ -314,7 +314,7 @@ a.btn:hover {
 
     h1 {
         font-size: 1.75rem;
-        margin-top: 0.5rem;
+        margin-top: 0.8rem;
     }
 
     .navbar .link {
@@ -357,32 +357,22 @@ a.btn:hover {
     }
 }
 
-/* MOBILE SIZE */
-@media only screen and (max-width: 550px) {
-    /* NAVBAR */
-    h1 {
-        font-size: 1rem;
-        margin: 0;
-    }
-
+/* MOBILE SIZE (550px) */
+@media only screen and (max-width: 34.375em) {
     /* HERO */
     .hero {
-        padding: 5rem 0 3rem 0;
+        padding-top: 20vw;
+        padding-bottom: 20vw;
     }
 
     .hero span {
-        font-size: 3rem;
-    }
-
-    /* PROJECT GRID */
-    #project-grid {
-        margin: 32px 0 0 0;
+        font-size: 4.8rem;
     }
 
     /* ABOUT */
     #about {
-        margin: 100px auto;
-        min-width: 350px;
+        margin: 10rem auto;
+        min-width: 35rem;
     }
 }
 
