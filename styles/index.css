@@ -137,39 +137,35 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "natours shop"
-    "swipe nexter"
-    "museum trillo";
+    "natours game"
+    "swipe museum"
+    "nexter trillo";
     gap: 4rem;
     width: 100%;
-}
-
-#shop {
-    grid-area: shop;
-}
-
-#swipe {
-    grid-area: swipe;
-}
-
-#estimator {
-    grid-area: estimator;
-}
-
-#museum {
-    grid-area: museum;
 }
 
 #natours {
     grid-area: natours;
 }
 
-#trillo {
-    grid-area: trillo;
+#game {
+    grid-area: game;
+}
+
+#swipe {
+    grid-area: swipe;
+}
+
+#museum {
+    grid-area: museum;
 }
 
 #nexter {
     grid-area: nexter;
+}
+
+#trillo {
+    grid-area: trillo;
 }
 
 #project-grid .white h2 {
@@ -300,10 +296,10 @@ a.btn:hover {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
             "natours"
-            "shop"
+            "game"
             "swipe"
-            "nexter"
             "museum"
+            "nexter"
             "trillo";
     }
     
