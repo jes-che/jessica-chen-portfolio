@@ -139,7 +139,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "natours game"
+    "game natours"
     "swipe museum"
     "nexter trillo";
     gap: 4rem;
@@ -298,8 +298,8 @@ a.btn:hover {
         max-width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
-            "natours"
             "game"
+            "natours"
             "swipe"
             "museum"
             "nexter"
