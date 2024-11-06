@@ -141,7 +141,7 @@ h1 {
     grid-template-areas: 
     "game natours"
     "swipe museum"
-    "nexter trillo";
+    "nexter archery";
     gap: 4rem;
     width: 100%;
 }
@@ -166,8 +166,8 @@ h1 {
     grid-area: nexter;
 }
 
-#trillo {
-    grid-area: trillo;
+#archery {
+    grid-area: archery;
 }
 
 #project-grid .white h2 {
@@ -303,7 +303,7 @@ a.btn:hover {
             "swipe"
             "museum"
             "nexter"
-            "trillo";
+            "archery";
     }
     
     /* ABOUT */
