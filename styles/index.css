@@ -2,7 +2,6 @@
     /* TEXT VARIABLES */
     /* --font-1: "Cormorant Garamond", serif; */
     --font-1: "Raleway", sans-serif;
-    --font-2: "Raleway", sans-serif;
     --text-light-1: #fff;
     --text-light-2: #996;
     --text-dark: #0f0f0f;
@@ -203,11 +202,11 @@ h1 {
 .project h2 {
     font-size: 2.4rem;
     font-weight: 600;
-    font-family: var(--font-2);
+    font-family: var(--font-1);
 }
 
 .project p {
-    font-family: var(--font-2);
+    font-family: var(--font-1);
     font-size: 2rem;
     line-height: 1.25;
     font-weight: 300;
@@ -218,7 +217,7 @@ a.btn {
     border-radius: 30rem;
     display: inline-block;
     color: var(--text-light-2);
-    font-family: var(--font-2);
+    font-family: var(--font-1);
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 1.2rem;
