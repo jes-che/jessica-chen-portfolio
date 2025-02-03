@@ -138,9 +138,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "game natours"
-    "archery museum"
-    "nexter swipe";
+    "game movie"
+    "archery natours"
+    "museum swipe";
     gap: 4rem;
     width: 100%;
 }
@@ -161,12 +161,12 @@ h1 {
     grid-area: museum;
 }
 
-#nexter {
-    grid-area: nexter;
-}
-
 #archery {
     grid-area: archery;
+}
+
+#movie {
+    grid-area: movie;
 }
 
 #project-grid .white h2 {
@@ -298,10 +298,10 @@ a.btn:hover {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
             "game"
-            "natours"
+            "movie"
             "archery"
+            "natours"
             "museum"
-            "nexter"
             "swipe";
     }
     
