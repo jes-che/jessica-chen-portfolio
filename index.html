@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="styles/index.css" />
+        <script src="index.js" defer></script>
         <title>Jessica Chen</title>
     </head>
     <body>
@@ -39,8 +40,28 @@
                     <span>my portfolio.</span>
                 </div>
                 <section id="project-grid">
-                    
                     <article class="project" id="game">
+                        <div class="carousel" data-carousel>
+                            <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+                            <button class="carousel-button next" data-carousel-button="next">&#62;</button>
+                            <!-- <div data-slides>
+                                <img src="images/guess-the-number-1.jpg" alt="The screenshot of Guess the Number #1" id="game-slide-1" class="slide" data-active>
+                                <img src="images/guess-the-number-2.jpg" alt="The screenshot of Guess the Number #2" id="game-slide-2" class="slide">
+                                <img src="images/guess-the-number-3.jpg" alt="The screenshot of Guess the Number #3" id="game-slide-3" class="slide">
+                            </div> -->
+                            <ul data-slides>
+                                <li class="slide" data-active>
+                                    <img src="images/guess-the-number-1.jpg" alt="The screenshot of Guess the Number #1" id="game-slide-1">
+                                </li>
+                                <li class="slide">
+                                    <img src="images/guess-the-number-2.jpg" alt="The screenshot of Guess the Number #2" id="game-slide-2">
+                                </li>
+                                <li class="slide">
+                                    <img src="images/guess-the-number-3.jpg" alt="The screenshot of Guess the Number #3" id="game-slide-3">
+                                </li>
+                            </ul>
+                        </div>
+                    <!-- <article class="project" id="game">
                         <div class="slider-wrapper">
                             <div class="slider">
                                 <img src="images/guess-the-number-1.jpg" alt="The screenshot of Guess the Number #1" id="game-slide-1">
@@ -52,14 +73,29 @@
                                 <a href="#game-slide-2"></a>
                                 <a href="#game-slide-3"></a>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <a href="https://jes-che.github.io/guess-the-number/" target="_blank"><img src="images/guess-the-number.jpg" alt="" /></a> -->
                         <h2>Guess the Number</h2>
                         <p>A simple game where a user guesses a number between 1 and 10, and the player's score will be counted and the highest score will be recorded during a session; created with <span class="skills">HTML</span>, <span class="skills">CSS</span> and <span class="skills">JavaScript</span></p>
                         <a class="btn" href="https://jes-che.github.io/guess-the-number/" target="_blank">View Project</a>
                     </article>
                     <article class="project" id="movie">
-                        <div class="slider-wrapper">
+                        <div class="carousel" data-carousel>
+                            <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+                            <button class="carousel-button next" data-carousel-button="next">&#62;</button>
+                            <ul data-slides>
+                                <li class="slide" data-active>
+                                    <img src="images/movie-search-1.jpg" alt="The screenshot of Movie Search #1" id="movie-slide-1">
+                                </li>
+                                <li class="slide">
+                                    <img src="images/movie-search-2.jpg" alt="The screenshot of Movie Search #2" id="movie-slide-2">
+                                </li>
+                                <li class="slide">
+                                    <img src="images/movie-search-3.jpg" alt="The screenshot of Movie Search #3" id="movie-slide-3">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="slider-wrapper">
                             <div class="slider">
                                 <img src="images/movie-search-1.jpg" alt="The screenshot of Movie Search #1" id="movie-slide-1">
                                 <img src="images/movie-search-2.jpg" alt="The screenshot of Movie Search #2" id="movie-slide-2">
@@ -70,7 +106,7 @@
                                 <a href="#movie-slide-2"></a>
                                 <a href="#movie-slide-3"></a>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <a href="https://jes-che.github.io/movie-search/" target="_blank"><img src="images/movie-search.jpg" alt="" /></a> -->
                         <h2>Movie Search</h2>
                         <p>This movie finder allows users to search for movies, and then displays movie information; built using <span class="skills">HTML</span>, <span class="skills">CSS</span>, <span class="skills">Bulma CSS framework</span>, <span class="skills">JavaScript</span> and <span class="skills">API</span></p>
@@ -112,6 +148,6 @@
             </main>
         </div>
 
-        <script src="index.js"></script>
+        <!-- <script src="index.js"></script> -->
     </body>
 </html>
