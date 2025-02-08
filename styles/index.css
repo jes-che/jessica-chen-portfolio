@@ -19,7 +19,6 @@ body {
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    /* overscroll-behavior-y: none; */
 }
 
 html {
@@ -320,12 +319,14 @@ a.btn:hover {
     z-index: 2;
     background: none;
     border: none;
-    font-size: 4rem;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
     color: rgba(245, 245, 245, 0.5);
-    top: 17rem;
+    /* top: 15rem; */
     cursor: pointer;
-    border-radius: 0.25rem;
-    padding: 0 0.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
     background-color: rgba(128, 128, 128, 0.1)
 }
 
@@ -340,7 +341,7 @@ a.btn:hover {
 }
 
 .carousel-button.prev {
-    left: 1rem;
+    right: 7rem;
 }
 
 .carousel-button.next {
@@ -368,6 +369,9 @@ a.btn:hover {
 
     /* CAROUSEL */
     .carousel-button {
+        font-size: 3rem;
+        width: 4rem;
+        height: 4rem;
         top: 12rem;
     }
 
@@ -406,7 +410,10 @@ a.btn:hover {
 
     /* CAROUSEL */
     .carousel-button {
-        top: 24rem;
+        font-size: 6rem;
+        width: 7rem;
+        height: 7rem;
+        top: 22.5rem;
     }
 }
 
@@ -461,6 +468,14 @@ a.btn:hover {
         margin-left: 5rem;
         min-width: 47.5rem;
     }
+
+    /* CAROUSEL */
+    .carousel-button {
+        font-size: 4rem;
+        width: 6rem;
+        height: 6rem;
+        top: 17rem;
+    }
 }
 
 /* MOBILE SIZE (550px) */
@@ -487,6 +502,14 @@ a.btn:hover {
 
     #contact p {
         font-size: 2.5rem;
+    }
+
+    /* CAROUSEL */
+    .carousel-button {
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+        top: 9.5rem;
     }
 }
 
