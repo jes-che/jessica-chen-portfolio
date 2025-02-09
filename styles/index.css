@@ -325,7 +325,7 @@ a.btn:hover {
     color: rgba(245, 245, 245, 0.5);
     /* top: 15rem; */
     cursor: pointer;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     padding: 0.5rem;
     background-color: rgba(128, 128, 128, 0.1)
 }
@@ -341,11 +341,11 @@ a.btn:hover {
 }
 
 .carousel-button.prev {
-    right: 7rem;
+    right: 6rem;
 }
 
 .carousel-button.next {
-    right: 1rem;
+    right: 0.5rem;
 }
 
 /* RESPONSIVE */
@@ -372,7 +372,11 @@ a.btn:hover {
         font-size: 3rem;
         width: 4rem;
         height: 4rem;
-        top: 12rem;
+        /* top: 12rem; */
+    }
+
+    .carousel-button.prev {
+        right: 5rem;
     }
 
 }
@@ -413,7 +417,11 @@ a.btn:hover {
         font-size: 6rem;
         width: 7rem;
         height: 7rem;
-        top: 22.5rem;
+        /* top: 22.5rem; */
+    }
+
+    .carousel-button.prev {
+        right: 8.5rem;
     }
 }
 
@@ -474,7 +482,11 @@ a.btn:hover {
         font-size: 4rem;
         width: 6rem;
         height: 6rem;
-        top: 17rem;
+        /* top: 17rem; */
+    }
+
+    .carousel-button.prev {
+        right: 7.5rem;
     }
 }
 
@@ -509,7 +521,11 @@ a.btn:hover {
         font-size: 2rem;
         width: 4rem;
         height: 4rem;
-        top: 9.5rem;
+        /* top: 9.5rem; */
+    }
+
+    .carousel-button.prev {
+        right: 5rem;
     }
 }
 
