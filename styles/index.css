@@ -502,6 +502,12 @@ a.btn:hover {
         font-size: 4.25rem;
     }
 
+    /* PROJECT GRID */
+    #game h2,
+    #movie h2 {
+        margin-top: 60%;
+    }
+
     /* ABOUT */
     #about {
         margin: 10rem auto;
