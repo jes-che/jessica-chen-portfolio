@@ -1,6 +1,5 @@
 :root {
     /* TEXT VARIABLES */
-    /* --font-1: "Cormorant Garamond", serif; */
     --font-1: "Raleway", sans-serif;
     --text-light-1: #fff;
     --text-light-2: #996;
@@ -128,7 +127,6 @@ h1 {
 .hero {
     height: auto;
     border-top: 1px solid var(--text-dark);
-    /* padding: 12rem 0 6rem 3rem; */
     padding: 7vw 0 7vw 1vw;
 }
 
@@ -197,7 +195,6 @@ h1 {
     width: 100%;
     object-fit: cover;
     box-shadow: 1rem 1rem 1rem rgba(0,0,0, 0.3);
-    /* transition: 0.2s ease-in; */
 }
 
 .project h2 {
@@ -323,9 +320,7 @@ a.btn:hover {
     width: 5rem;
     height: 5rem;
     color: rgba(245, 245, 245, 0.5);
-    /* top: 15rem; */
     cursor: pointer;
-    /* border-radius: 50%; */
     padding: 0 0.5rem;
     background-color: rgba(128, 128, 128, 0.1)
 }
@@ -372,7 +367,6 @@ a.btn:hover {
         font-size: 3rem;
         width: 4rem;
         height: 4rem;
-        /* top: 12rem; */
     }
 
     .carousel-button.prev {
@@ -417,7 +411,6 @@ a.btn:hover {
         font-size: 6rem;
         width: 7rem;
         height: 7rem;
-        /* top: 22.5rem; */
     }
 
     .carousel-button.prev {
@@ -482,7 +475,6 @@ a.btn:hover {
         font-size: 4rem;
         width: 6rem;
         height: 6rem;
-        /* top: 17rem; */
     }
 
     .carousel-button.prev {
@@ -527,7 +519,6 @@ a.btn:hover {
         font-size: 2rem;
         width: 4rem;
         height: 4rem;
-        /* top: 9.5rem; */
     }
 
     .carousel-button.prev {
